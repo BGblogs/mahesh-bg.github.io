@@ -1,0 +1,264 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.scss">
+    <script src="./index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Mahesh BG</title>
+</head>
+
+<body class="body" id="body">
+    <button class="scrollToTop" onclick="scrollToTop()"><img src="assets/icons/BackToTop.png" /></button>
+    <div class="nav-bar" id="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" onclick="scrollToTop()"><img class="nav-icon" height="30px" width="40px"
+                    src="assets/icons/HomeIcon.png" alt="" /><span class="nav-text">Home</span></li>
+            <li class="nav-item" onclick="scrollToAbout()"><img class="nav-icon" height="30px" width="30px"
+                    src="assets/icons/ProfileIcon.png" alt="" /><span class="nav-text">About</span></li>
+            <li class="nav-item" onclick="scrollToExperience()"><img class="nav-icon" height="30px" width="30px"
+                    src="assets/icons/BriefcaseIcon.png" alt="" /><span class="nav-text">Experience</span>
+            </li>
+            <li class="nav-item" onclick="scrollToContact()"><img class="nav-icon" height="30px" width="40px"
+                    src="assets/icons/MailIcon.png" alt="" /><span class="nav-text">Contact</span></li>
+            <li class="nav-item" onclick="downloadPDF()"><img class="nav-icon" height="30px" width="30px"
+                    src="assets/icons/DownloadIcon.png" alt="" /><span class="nav-text">Download PDF</span>
+            </li>
+        </ul>
+    </div>
+    <div class="Home" id="Home">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col home-title-block">
+                <span class="home-title">Mahesh B G</span>
+                <span class="home-subtitle">Full Stack Developer</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <p class="home-description">Welcome! I'm Mahesh, a passionate and dedicated Full Stack Developer with a
+                    strong background in web development and a keen interest in creating innovative and user-friendly
+                    solutions. I would like to contribute to dynamic projects that push the boundaries of technology.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="About" id="About">
+        <div class="accordion accordion-flush" id="about-accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Education
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Bachelor of Engineering</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>Institution : APS College of Engineering</span>
+                                    <span>Branch : Electronics and Communication</span>
+                                    <span>CGPA : 7.1</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">PUC</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>Institution : PES PU College</span>
+                                    <span>Branch : Electronics</span>
+                                    <span>Percentage : 68%</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">10th Std</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>Institution : Samved School</span>
+                                    <span>Percentage : 88%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Skills
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Frontend</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>HTML , CSS, Sass/Scss, JS, React, .Net/Blazor, jQuery, Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Backend</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>NodeJS, ExpressJS, C#, REST API</span>
+                                    <span>Database : SQL, MySQL, DynamoDB</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Other Skills</h5>
+                                <hr class="div-split">
+                                <p class="card-text">
+                                    <span>Git, CI/CD</span>
+                                    <span>IAC : Terraform, AWS CloudFormation</span>
+                                    <span>AWS Services : EC2, S3, Amplify, Lambda, DynamoDb, Cloudwatch</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Interests
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Football</h5>
+                                <hr class="div-split">
+                                <p class="card-text">I have been an ardent follower and have been playing football since
+                                    the age of 9 and have represented my college team in tournaments.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Books</h5>
+                                <hr class="div-split">
+                                <p class="card-text">I read Fiction Novels, Crime thrillers and Manga. My favorite book
+                                    currently is the “The Red Pyramid” from the Kane Chronicles series by Rick Riordan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Other</h5>
+                                <hr class="div-split">
+                                <p class="card-text">I play Cricket and Badminton regularly and watch Movies and TV
+                                    shows on a daily basis. I can also cook a few dishes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Experience" id="Experience">
+        <div class="rhibhus-card">
+            <div class="card">
+                <div class="card-body">
+                    <span class="rhibhus-name">Company : Rhibhus Infosystems Pvt Ltd.</span>
+                    <span class="rhibhus-role">Role : Full Stack Developer</span>
+                    <div class="rhibhus-projects">
+                        <h5>Projects :</h5>
+                        <div class="beam-project">
+                            <p class="project-title-block">
+                                <span class="project-title">Beam Education : </span>
+                                <span class="project-duration">Jun 2023- Current</span>
+                            </p>
+                            <p class="project-description">
+                                <span>An EdTech platform based out of UK that would help schools evaluate and assess
+                                    students on the platform and produces outcomes and predictions that the teacher and
+                                    school can make use of to improve on both individual and collective groups of
+                                    students.</span>
+                                <br>
+                                <br>
+                                <span>
+                                    I led the team and focused on Frontend Development and Deployment in AWS.
+                                    <br>
+                                    The project made use of ReactJS, Scss in Fronten, NodeJs for Backend and DynamoDB as
+                                    the Database
+                                </span>
+                            </p>
+                        </div>
+                        <div class="spacebands-project">
+                            <p class="project-title-block">
+                                <span class="project-title">Spacebands : </span>
+                                <span class="project-duration">Oct 2022 - Jun 2023</span>
+                            </p>
+                            <p class="project-description">
+                                The project used .NET, Blazor(Mudblazor), Sass and C# and SQL technologies to
+                                build a webapp that was used to monitor workplaces using a mobile app and a
+                                smartwatch which would help in the workers’ safety and access control
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Contact" id="Contact">
+        <h3>Contact</h3>
+        <div class="contact-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="contact-block">
+                        <span class="contact-email"><img src="./assets/icons/BlueMailIcon.png"/>Email : </span>
+                        <span class="contact-email-value">maheshbg005@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="contact-block">
+                        <span class="contact-email"><img src="./assets/icons/BluePhoneIcon.png"/>Phone</span>
+                        <span class="contact-email-value">+91 6363846982</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="contact-block">
+                        <span class="contact-email"><img src="./assets/icons/LinkedInIcon.png"/>LinkedIn : </span>
+                        <a class="contact-email-value" href="https://www.linkedin.com/in/mahesh-bg-0230b21a9/">mahesh-bg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Download" id="Download">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
