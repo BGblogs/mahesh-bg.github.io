@@ -1,5 +1,13 @@
+$primary-color : #C7004C;
+$secondary-color : #3b3b3b;
+$ternary-color: #A259FF;
+$white-color : #6420AA;
+$first-color : #FF611A;
+$second-color : #0A66C2;
+
+
 .body {
-    background-color: #2b2b2b;
+    background-color: $primary-color !important;
     margin: 0;
 }
 
@@ -9,10 +17,10 @@
     right: 5%;
     z-index: 5;
     border-radius: 25px;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     height: 50px;
     width: 50px;
-    color: #A259FF;
+    color: $ternary-color;
 
     img {
         height: 30px;
@@ -28,16 +36,16 @@ col .row .col-4 .col-6 {
 ul {
     padding-left: 0px;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #3b3b3b;
+    background-color: $secondary-color;
 }
 
 h3 {
-    color: #FF611A;
+    color: $first-color;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -47,7 +55,7 @@ h3 {
     height: 70px;
     min-width: 200px;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -59,14 +67,14 @@ flex-wrap: wrap;
 }
 
 .nav-text {
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 22px;
     font-weight: 500;
 }
 
 .home-title-block {
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -75,19 +83,19 @@ flex-wrap: wrap;
 }
 
 .home-title {
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 36px;
     font-weight: 700;
 }
 
 .home-subtitle {
-    color: #FF611A;
+    color: $first-color;
     font-size: 22px;
     font-weight: 600;
 }
 
 .home-description {
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
@@ -96,7 +104,7 @@ flex-wrap: wrap;
 
 .accordion {
     margin: 10% 10%;
-    border-color: #2b2b2b;
+    border-color: $primary-color;
     gap: 5px;
 }
 
@@ -111,25 +119,25 @@ flex-wrap: wrap;
 }
 
 .accordion-header {
-    background-color: #3b3b3b;
+    background-color: $secondary-color;
     border-radius: 25px;
 
     .accordion-button {
         border-radius: 25px 25px !important;
-        background-color: #A259FF;
-        color: #FFFFFF;
+        background-color: $ternary-color;
+        color: $white-color;
     }
 
     .accordion-button::after,
     .accordion-button:not(.collapsed) {
         border-radius: 25px 25px 0px 0px;
-        background: #A259FF;
-        color: #FFFFFF !important;
+        background: $ternary-color;
+        color: $white-color !important;
     }
 }
 
 .accordion-body {
-    background-color: #3b3b3b;
+    background-color: $secondary-color;
     border-radius: 25px;
     padding: 30px 25px !important;
 }
@@ -137,21 +145,21 @@ flex-wrap: wrap;
 .card {
     border-radius: 25px !important;
     margin-bottom: 20px;
-    background-color: #2b2b2b !important;
-    color: #FF611A !important;
+    background-color: $primary-color !important;
+    color: $first-color !important;
 
     .card-title {
-        color: #FFFFFF !important;
+        color: $white-color !important;
     }
 }
 
 .card-body {
     .card-text {
         display: flex;
-flex-wrap: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         gap: 5px;
-        color: #FFFFFF;
+        color: $white-color;
     }
 }
 
@@ -159,10 +167,10 @@ flex-wrap: wrap;
     margin: 10% 10%;
     border-radius: 25px;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: stretch;
-    background-color: #3b3b3b;
+    background-color: $secondary-color;
 
     .card {
         background-color: transparent !important;
@@ -172,19 +180,19 @@ flex-wrap: wrap;
 
     .card-body {
         background-color: transparent;
-        color: #FFFFFF;
+        color: $white-color;
         display: flex;
-flex-wrap: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
     .rhibhus-name,
     .rhibhus-role {
-        border: 1px solid #A259FF;
+        border: 1px solid $ternary-color;
         border-radius: 25px;
         min-height: 50px;
         display: flex;
-flex-wrap: wrap;
+        flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
@@ -195,10 +203,10 @@ flex-wrap: wrap;
     }
 
     .rhibhus-projects {
-        border: 1px solid #A259FF;
+        border: 1px solid $ternary-color;
         border-radius: 25px;
         display: flex;
-flex-wrap: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         padding: 20px;
         margin-bottom: 20px;
@@ -210,13 +218,13 @@ flex-wrap: wrap;
     .spacebands-project {
         padding: 20px;
         margin-top: 30px;
-        background-color: #2b2b2b;
+        background-color: $primary-color;
         border-radius: 25px;
-        border: 1px solid #FF611A;
+        border: 1px solid $first-color;
 
         .project-title-block {
             display: flex;
-flex-wrap: wrap;
+            flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
@@ -224,18 +232,18 @@ flex-wrap: wrap;
             .project-title {
                 font-weight: 600;
                 font-size: 20px;
-                color: #A259FF;
+                color: $ternary-color;
             }
 
             .project-duration {
                 font-weight: 500;
                 font-size: 16px;
-                color: #FFFFFF;
+                color: $white-color;
             }
         }
 
         .project-description {
-            color: #FFFFFF;
+            color: $white-color;
         }
     }
 }
@@ -247,7 +255,7 @@ flex-wrap: wrap;
 
 .contact-card {
     margin: 0 8%;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     border-radius: 25px;
 
     .card {
@@ -256,18 +264,18 @@ flex-wrap: wrap;
 
         .contact-block {
             display: flex;
-flex-wrap: wrap;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             padding: 0 25px;
-            color: #0A66C2;
+            color: $second-color;
             font-size: 18px;
 
             .contact-email {
                 text-transform: uppercase;
                 display: flex;
-flex-wrap: wrap;
+                flex-wrap: wrap;
                 gap: 30px;
                 letter-spacing: 0.3ch;
                 font-weight: 700;
@@ -275,7 +283,7 @@ flex-wrap: wrap;
 
             .contact-email-value {
                 text-transform: none !important;
-                color: #0A66C2;
+                color: $second-color;
                 font-weight: 700;
             }
         }
