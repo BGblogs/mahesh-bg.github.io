@@ -109,7 +109,7 @@ h3 {
 }
 
 .accordion-item {
-    background-color: transparent !important;
+    background-color: #b5b5b5 !important;
     margin-bottom: 25px;
 }
 
@@ -149,7 +149,7 @@ h3 {
     color: $first-color !important;
 
     .card-title {
-        color: $white-color !important;
+        color: #FF611A !important;
     }
 }
 
@@ -288,4 +288,7 @@ h3 {
             }
         }
     }
+}
+.div-split{
+    color: #FF611A;
 }
