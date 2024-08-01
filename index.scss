@@ -83,13 +83,13 @@ h3 {
 }
 
 .home-title {
-    color: $white-color;
+    color: #6420AA;
     font-size: 36px;
     font-weight: 700;
 }
 
 .home-subtitle {
-    color: $first-color;
+    color: #FF611A;;
     font-size: 22px;
     font-weight: 600;
 }
@@ -197,7 +197,6 @@ h3 {
         align-items: center;
         justify-content: flex-start;
         padding: 20px;
-        margin-bottom: 20px;
         font-size: 16px;
         font-weight: 500;
     }
@@ -291,4 +290,27 @@ h3 {
 }
 .div-split{
     color: #FF611A;
+}
+
+.profileImgContainer{
+    display: flex;
+
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 50px;
+    .profileImage{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+}
+
+.techStackHighlight{
+    margin: 0;
+    padding: 0;
+    color: #6420AA;
+    font-style: italic;
+    font-weight: 600;
 }
