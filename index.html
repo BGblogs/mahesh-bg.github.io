@@ -10,38 +10,21 @@
     <title>Mahesh BG</title>
 </head>
 
-<body class="body" id="body">
-    
-    <!-- <div class="nav-bar" id="nav-bar">
-        <ul class="nav-list">
-            <li class="nav-item" onclick="scrollToTop()"><img class="nav-icon" height="30px" width="40px"
-                    src="assets/icons/HomeIcon.png" alt="" /><span class="nav-text">Home</span></li>
-            <li class="nav-item" onclick="scrollToAbout()"><img class="nav-icon" height="30px" width="30px"
-                    src="assets/icons/ProfileIcon.png" alt="" /><span class="nav-text">About</span></li>
-            <li class="nav-item" onclick="scrollToExperience()"><img class="nav-icon" height="30px" width="30px"
-                    src="assets/icons/BriefcaseIcon.png" alt="" /><span class="nav-text">Experience</span>
-            </li>
-            <li class="nav-item" onclick="scrollToContact()"><img class="nav-icon" height="30px" width="40px"
-                    src="assets/icons/MailIcon.png" alt="" /><span class="nav-text">Contact</span></li>
-            <li class="nav-item" onclick="downloadPDF()"><img class="nav-icon" height="30px" width="30px"
-                    src="assets/icons/DownloadIcon.png" alt="" /><span class="nav-text">Download PDF</span>
-            </li>
-        </ul>
-    </div> -->
+<body class="body" id="body" style="background: #f5f5f5">
     <div class="Home" id="Home">
         <div class="row">
-            <div class="col-4">
-
+            <div class="col-md-4 profileImgContainer">
+                <img src="./assets/ProfileImage.jpg" class="profileImage" />
             </div>
             <div class="col home-title-block">
                 <span class="home-title">Mahesh B G</span>
-                <span class="home-subtitle">Full Stack Developer</span>
+                <span class="home-subtitle">Front End Developer</span>
             </div>
         </div>
         <div class="row">
             <div class="col"></div>
-            <div class="col-8">
-                <p class="home-description">Welcome! I'm Mahesh, a passionate and dedicated Full Stack Developer with a
+            <div class="col-md-8">
+                <p class="home-description">Welcome! I'm Mahesh, a passionate and dedicated Front End Developer with a
                     strong background in web development and a keen interest in creating innovative and user-friendly
                     solutions. I would like to contribute to dynamic projects that push the boundaries of technology.
                 </p>
@@ -49,11 +32,59 @@
             <div class="col"></div>
         </div>
     </div>
+    <div class="Experience" id="Experience">
+        <div class="rhibhus-card">
+            <div class="card">
+                <div class="card-body">
+                    <span class="rhibhus-name">Company : Rhibhus Infosystems Pvt Ltd.</span>
+                    <span class="rhibhus-role">Role : Associate Software Developer</span>
+                    <div class="rhibhus-projects">
+                        <h5>Projects :</h5>
+                        <div class="beam-project">
+                            <p class="project-title-block">
+                                <span class="project-title">Beam Education : </span>
+                                <span class="project-duration">Jun 2023- July 2024</span>
+                            </p>
+                            <p><span class="techStackHighlight">Stack : </span>React , NodeJS, Scss, DynamoDb, AWS Terraform </p>
+                            <p class="project-description">
+                                <span>An EdTech platform based out of UK that would help schools evaluate and assess
+                                    students on the platform and produces outcomes and predictions that the teacher and
+                                    school can make use of to improve on both individual and collective groups of
+                                    students.</span>
+                                <br>
+                                <br>
+                                <h6>
+                                    Roles and Responsibilities :
+                                </h6>
+                                <p style="white-space: pre-line">
+                                    I lead a team of 5 members while handling the infrastructure and deployment in <span class="techStackHighlight">AWS</span>.
+                                    I connected with the Client on a regular basis to collect requirement and translate them into tasks on <span class="techStackHighlight">Jira</span>.
+                                    I also worked majorly on the Frontend of the application which was made using <span class="techStackHighlight">React</span> and <span class="techStackHighlight">Scss</span> mainly.
+                                    I also worked on the backend in <span class="techStackHighlight">Node</span> to write APIs with <span class="techStackHighlight">Dynamoose</span> to connect to <span class="techStackHighlight">DynamoDb</span>
+                                </p>
+                            </p>
+                        </div>
+                        <div class="spacebands-project">
+                            <p class="project-title-block">
+                                <span class="project-title">Spacebands : </span>
+                                <span class="project-duration">Oct 2022 - Jun 2023</span>
+                            </p>
+                            <p><span class="techStackHighlight">Stack : </span>.NET, C#, Blazor,  Mudblazor, Scss, MySQL </p>
+                            <p class="project-description">
+                                The project used <span class="techStackHighlight">.NET</span>, <span class="techStackHighlight">Blazor(Mudblazor)</span>, <span class="techStackHighlight">Scss</span> and <span class="techStackHighlight">C#</span> and <span class="techStackHighlight">SQL</span> technologies to build a webapp that was used to monitor workplaces using a mobile app and a
+                                smartwatch which would help in the workers’ safety and access control
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="About" id="About">
         <div class="accordion accordion-flush" id="about-accordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Education
                     </button>
@@ -67,7 +98,7 @@
                                 <p class="card-text">
                                     <span>Institution : APS College of Engineering</span>
                                     <span>Branch : Electronics and Communication</span>
-                                    <span>CGPA : 7.1</span>
+                                    <span>CGPA : 7.0</span>
                                 </p>
                             </div>
                         </div>
@@ -109,7 +140,7 @@
                                 <h5 class="card-title">Frontend</h5>
                                 <hr class="div-split">
                                 <p class="card-text">
-                                    <span>HTML , CSS, Sass/Scss, JS, React, .Net/Blazor, jQuery, Bootstrap</span>
+                                    <span>React, HTML, Vue, CSS, Sass/Scss, JS,.Net/Blazor, jQuery, Bootstrap</span>
                                 </p>
                             </div>
                         </div>
@@ -176,57 +207,14 @@
             </div>
         </div>
     </div>
-    <div class="Experience" id="Experience">
-        <div class="rhibhus-card">
-            <div class="card">
-                <div class="card-body">
-                    <span class="rhibhus-name">Company : Rhibhus Infosystems Pvt Ltd.</span>
-                    <span class="rhibhus-role">Role : Full Stack Developer</span>
-                    <div class="rhibhus-projects">
-                        <h5>Projects :</h5>
-                        <div class="beam-project">
-                            <p class="project-title-block">
-                                <span class="project-title">Beam Education : </span>
-                                <span class="project-duration">Jun 2023- Current</span>
-                            </p>
-                            <p class="project-description">
-                                <span>An EdTech platform based out of UK that would help schools evaluate and assess
-                                    students on the platform and produces outcomes and predictions that the teacher and
-                                    school can make use of to improve on both individual and collective groups of
-                                    students.</span>
-                                <br>
-                                <br>
-                                <span>
-                                    I led the team and focused on Frontend Development and Deployment in AWS.
-                                    <br>
-                                    The project made use of ReactJS, Scss in Fronten, NodeJs for Backend and DynamoDB as
-                                    the Database
-                                </span>
-                            </p>
-                        </div>
-                        <div class="spacebands-project">
-                            <p class="project-title-block">
-                                <span class="project-title">Spacebands : </span>
-                                <span class="project-duration">Oct 2022 - Jun 2023</span>
-                            </p>
-                            <p class="project-description">
-                                The project used .NET, Blazor(Mudblazor), Sass and C# and SQL technologies to
-                                build a webapp that was used to monitor workplaces using a mobile app and a
-                                smartwatch which would help in the workers’ safety and access control
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="Contact" id="Contact">
         <!-- <h3>Contact</h3> -->
         <div class="contact-card">
             <div class="card">
                 <div class="card-body">
                     <div class="contact-block">
-                        <span class="contact-email"><img src="./assets/icons/BlueMailIcon.png"/>Email : </span>
+                        <span class="contact-email"><img src="./assets/icons/BlueMailIcon.png" />Email : </span>
                         <span class="contact-email-value">maheshbg005@gmail.com</span>
                     </div>
                 </div>
@@ -236,8 +224,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="contact-block">
-                        <span class="contact-email"><img src="./assets/icons/BluePhoneIcon.png"/>Phone</span>
-                        <span class="contact-email-value">+91 6363846982</span>
+                        <span class="contact-email"><img src="./assets/icons/BluePhoneIcon.png" />Phone</span>
+                        <span class="contact-email-value">+91 6363846982 / +91 7259908660</span>
                     </div>
                 </div>
             </div>
@@ -246,8 +234,9 @@
             <div class="card">
                 <div class="card-body">
                     <div class="contact-block">
-                        <span class="contact-email"><img src="./assets/icons/LinkedInIcon.png"/>LinkedIn : </span>
-                        <a class="contact-email-value" href="https://www.linkedin.com/in/mahesh-bg-0230b21a9/">mahesh-bg</a>
+                        <span class="contact-email"><img src="./assets/icons/LinkedInIcon.png" />LinkedIn : </span>
+                        <a class="contact-email-value"
+                            href="https://www.linkedin.com/in/mahesh-bg-0230b21a9/">mahesh-bg</a>
                     </div>
                 </div>
             </div>
