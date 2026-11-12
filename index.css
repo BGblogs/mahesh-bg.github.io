@@ -14,6 +14,7 @@
   width: 50px;
   color: #A259FF;
 }
+
 .scrollToTop img {
   height: 30px;
   width: 20px;
@@ -99,7 +100,7 @@ h3 {
 }
 
 .accordion-item {
-  background-color: transparent !important;
+  background-color: #b5b5b5 !important;
   margin-bottom: 25px;
 }
 
@@ -112,11 +113,13 @@ h3 {
   background-color: #3b3b3b;
   border-radius: 25px;
 }
+
 .accordion-header .accordion-button {
   border-radius: 25px 25px !important;
   background-color: #A259FF;
   color: #6420AA;
 }
+
 .accordion-header .accordion-button::after,
 .accordion-header .accordion-button:not(.collapsed) {
   border-radius: 25px 25px 0px 0px;
@@ -136,8 +139,9 @@ h3 {
   background-color: #C7004C !important;
   color: #FF611A !important;
 }
+
 .card .card-title {
-  color: #6420AA !important;
+  color: #FF611A !important;
 }
 
 .card-body .card-text {
@@ -157,11 +161,13 @@ h3 {
   align-items: stretch;
   background-color: #3b3b3b;
 }
+
 .rhibhus-card .card {
   background-color: transparent !important;
   padding: 10px 10px;
   margin: 0;
 }
+
 .rhibhus-card .card-body {
   background-color: transparent;
   color: #6420AA;
@@ -169,6 +175,7 @@ h3 {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 .rhibhus-card .rhibhus-name,
 .rhibhus-card .rhibhus-role {
   border: 1px solid #A259FF;
@@ -184,6 +191,7 @@ h3 {
   font-size: 16px;
   font-weight: 500;
 }
+
 .rhibhus-card .rhibhus-projects {
   border: 1px solid #A259FF;
   border-radius: 25px;
@@ -195,6 +203,7 @@ h3 {
   font-size: 16px;
   font-weight: 400;
 }
+
 .rhibhus-card .beam-project,
 .rhibhus-card .spacebands-project {
   padding: 20px;
@@ -203,6 +212,7 @@ h3 {
   border-radius: 25px;
   border: 1px solid #FF611A;
 }
+
 .rhibhus-card .beam-project .project-title-block,
 .rhibhus-card .spacebands-project .project-title-block {
   display: flex;
@@ -211,18 +221,21 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
+
 .rhibhus-card .beam-project .project-title-block .project-title,
 .rhibhus-card .spacebands-project .project-title-block .project-title {
   font-weight: 600;
   font-size: 20px;
   color: #A259FF;
 }
+
 .rhibhus-card .beam-project .project-title-block .project-duration,
 .rhibhus-card .spacebands-project .project-title-block .project-duration {
   font-weight: 500;
   font-size: 16px;
   color: #6420AA;
 }
+
 .rhibhus-card .beam-project .project-description,
 .rhibhus-card .spacebands-project .project-description {
   color: #6420AA;
@@ -237,10 +250,12 @@ h3 {
   background-color: #6420AA;
   border-radius: 25px;
 }
+
 .contact-card .card {
   background: transparent !important;
   border-radius: 25px !important;
 }
+
 .contact-card .card .contact-block {
   display: flex;
   flex-wrap: wrap;
@@ -251,6 +266,7 @@ h3 {
   color: #0A66C2;
   font-size: 18px;
 }
+
 .contact-card .card .contact-block .contact-email {
   text-transform: uppercase;
   display: flex;
@@ -259,8 +275,13 @@ h3 {
   letter-spacing: 0.3ch;
   font-weight: 700;
 }
+
 .contact-card .card .contact-block .contact-email-value {
   text-transform: none !important;
   color: #0A66C2;
   font-weight: 700;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.div-split {
+  color: #FF611A;
+}
